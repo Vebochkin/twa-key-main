@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background: var(--background_panel);
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+:root.light {
+  /*Telegram цвета*/
+  --bg_color: #eee !important;
+  --secondary_bg_color: #eee !important;
+
+  /*Фоны*/
+  --background_panel: #ffffff;
+  --background_card: #eee;
+  --background_count_completed: #005bc4;
+  --background_count: #a1a1aa;
+  --background_blur: #efffae;
+  --background_button_fixed: rgba(255, 255, 255, 0.95);
+
+  /*Обводки*/
+  --border_count_completed: #338ef7;
+  --border_count: #d2d2d4;
+
+  /*Фон кнопок*/
+  --background_button_accent: #006fee;
+  --background_button_positive: #17c964;
+  --background_button_secondary: #a1a1aa;
+
+  /*Цвет текста кнопок*/
+  --text_button_accent: #e6f1fe;
+  --text_button_positive: #e8faf0;
+  --text_button_secondary: #fafafa;
+
+  /*Цвет текста*/
+  --text_primary_reverse: #000000;
+  --text_primary_positive: #000000;
+  --text_accent: #000000;
+  --text_secondary: #4e4e4e;
+  --text_link: #0a84ff;
+  --text_positive: #2ea949;
+  --text_count: #ffffff;
+  --text_count_complited: #ffffff;
+}
+
+:root.dark {
+  /*Telegram цвета*/
+  --bg_color: #111111 !important;
+  --secondary_bg_color: #111111 !important;
+
+  /*Фоны*/
+  --background_panel: #000000;
+  --background_card: #111111;
+  --background_count_completed: #005bc4;
+  --background_count: #6d6d6d;
+  --background_blur: #25180E;
+  --background_button_fixed: rgba(0, 0, 0, 0.95);
+
+  /*Обводки*/
+  --border_count_completed: #338ef7;
+  --border_count: #8e8e93;
+
+  /*Фон кнопок*/
+  --background_button_accent: #001731;
+  --background_button_positive: #052814;
+  --background_button_secondary: #18181b;
+
+  /*Цвет текста кнопок*/
+  --text_button_accent: #66aaf9;
+  --text_button_positive: #74dfa2;
+  --text_button_secondary: #d4d4d8;
+
+  /*Цвет текста*/
+  --text_primary_reverse: #ffffff;
+  --text_primary_positive: #ffffff;
+  --text_accent: #ffffff;
+  --text_secondary: #8e8e94;
+  --text_link: #0a84ff;
+  --text_positive: #2ea949;
+  --text_count: #ffffff;
+  --text_count_complited: #ffffff;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100vh;
+}

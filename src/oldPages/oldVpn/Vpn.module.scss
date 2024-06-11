@@ -1,0 +1,560 @@
+.contentContainer {
+  padding-bottom: calc(143px);
+  height: calc(100vh - 155px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainerWin {
+  padding-bottom: 0px;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: calc(155px + 24px);
+}
+
+.contentWin {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 24px;
+}
+
+.topIllustrationContainer {
+  margin: 44px auto 0px auto;
+  max-width: 150px;
+  min-width: 150px;
+  padding: 0px 50px;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 50px 20px 50px;
+  color: var(--text_accent);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.subTitle {
+  font-size: 20px;
+  color: var(--text_secondary);
+  margin-top: -8px;
+  padding: 0px 60px 25px 60px;
+  text-align: center;
+  line-height: 110%;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 12px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.listCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text_count);
+  background: var(--background_count);
+  border: var(--border_count) 3px solid;
+  border-radius: 100px;
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+}
+
+.listCountCompleted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text_accent);
+  background: var(--background_count_completed);
+  border: var(--border_count_completed) 3px solid;
+  border-radius: 100px;
+  min-width: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  max-height: 24px;
+}
+
+.listText {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  background: var(--background_card);
+  border-radius: 16px;
+  padding: 8px 24px 8px 12px;
+  color: var(--text_accent);
+  max-width: 290px;
+  width: 72%;
+  font-size: 19px;
+  line-height: 110%;
+}
+
+.textLink {
+  color: var(--text_link) !important;
+}
+
+.textPositive {
+  color: var(--text_positive) !important;
+}
+
+.textKey {
+  color: #ac8e68;
+}
+
+.buttonContainerFixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: calc(100% - 30px);
+  padding: 0px 15px 26px 15px;
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.buttonContainerFixedWin {
+  display: none;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.countContainer {
+  position: relative;
+}
+
+.lineContainer {
+  position: absolute;
+  bottom: -37px;
+  left: 13px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.lineTop {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.lineCenter {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  border-radius: 8px;
+  height: 8px;
+}
+
+.lineBottom {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  border-radius: 8px;
+  height: 8px;
+}
+
+.lineContainerWin {
+  position: absolute;
+  bottom: -47px;
+  left: 13px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.lineTopWin {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  border-radius: 8px;
+  height: 10px;
+}
+
+.lineCenterWin {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  border-radius: 8px;
+  height: 10px;
+}
+
+.lineBottomWin {
+  background: rgba(142, 142, 147, 0.15);
+  width: 4px;
+  border-radius: 8px;
+  height: 10px;
+}
+
+.keyContainerWin {
+  display: flex;
+  align-items: center;
+  border: 8px #111111 solid;
+  margin: 0px 20px 25px 20px;
+  border-radius: 25px;
+  padding: 6px 8px;
+  gap: 6px;
+  max-width: 390px;
+}
+
+.keyContainer {
+  display: none;
+}
+
+.iconKeyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  max-height: 42px;
+  min-width: 30px;
+  max-width: 30px;
+}
+
+.key {
+  color: var(--text_accent);
+  font-size: 17px;
+  width: 100%;
+  padding-right: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: break-word; /* не поддерживает IE, Firefox; является копией word-wrap */
+  word-wrap: break-word;
+  word-break: break-all; /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */
+  line-break: auto; /* нет поддержки для русского языка */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; /* значение auto не поддерживается Chrome */
+}
+
+.iconCopyContainer {
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: #1c1c1e;
+  margin-left: auto;
+}
+
+.iconCopyContainer:active {
+  opacity: 0.6;
+}
+
+.blockNone {
+  display: none;
+}
+
+.contentAndroidAndIOSContainer {
+  position: relative;
+}
+
+.headerAndroidAndIOSContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 50%;
+  padding: 60px;
+  text-align: center;
+  border-radius: 25px;
+  width: calc(100% - 240px);
+}
+
+.headerAndroidAndIOSBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: var(--background_blur);
+  filter: blur(60px);
+}
+
+.contentHeaderAndroidAndIOSContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 24px);
+  height: 100%;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  z-index: 2;
+  padding: 12px;
+  gap: 8px;
+}
+
+.titleAndroidAndIOS {
+  text-align: center;
+  color: var(--text_accent);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 110%;
+  animation: 2s showTextTitle ease;
+  will-change: transform;
+}
+
+@keyframes showTextTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.subtitleAndroidAndIOS {
+  font-size: 16px;
+  color: var(--text_secondary);
+  margin-top: -8px;
+  text-align: center;
+}
+
+.topIllustrationrAndroidAndIOSContainer {
+  margin: 0px auto 0px auto;
+  max-width: 150px;
+  min-width: 150px;
+  will-change: transform;
+}
+
+@import "typed";
+
+//Документация: https://github.com/brandonmcconnell/typed.css#table-of-contents
+.input_wrapper {
+  will-change: transform;
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  min-height: 37px;
+  max-height: 37px;
+  color: var(--text_secondary);
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    will-change: transform;
+    @include typed(
+      "Для начала посмотрите короткую видео-инструкцию",
+      1.5,
+      (
+        iterations: 0,
+        caret: false,
+      )
+    );
+  }
+}
+
+.videoContentAndroidAndIOSContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0px 60px 0px 60px;
+  text-align: center;
+  margin-top: 150%;
+}
+
+.textVideoAndroidAndIOS {
+  color: var(--text_primary_reverse);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footerVideoAndroidAndIOS {
+  font-size: 12px;
+  color: var(--text_secondary);
+}
+
+.videoAndroidAndIOSContainer {
+  min-width: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  max-height: 300px;
+  //padding-bottom: 56.25% !important;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.videoAndroidAndIOS {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.lineAndroidAndIOSContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineItemAndroidAndIOSContainer {
+  margin-top: calc(50% + 40px);
+  position: absolute;
+  left: 24px;
+  top: 0px;
+  width: 4px;
+  height: calc(100% - 220px);
+}
+
+.lineItemAndroidAndIOS {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/lineItem.svg");
+  background-repeat: repeat-y;
+  z-index: 1;
+}
+
+.handContainer {
+  position: absolute;
+  will-change: transform;
+  z-index: 2;
+  top: -12px;
+  left: -13px;
+  min-width: 28px;
+  max-width: 28px;
+  min-height: 28px;
+  max-height: 28px;
+}
+
+.listItemAndroidAndIOS {
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  left: -13px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.buttonAndroidAndIOSContainer {
+  position: relative;
+  min-height: 209px;
+  max-height: 209px;
+  z-index: 1;
+}
+
+.button1ItemAndroidAndIOS_add {
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px 12px;
+  transition: 1s opacity;
+  //transform: scale(100%);
+  will-change: transform;
+  opacity: 1;
+  z-index: 2;
+}
+
+.button1ItemAndroidAndIOS_remove {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px 12px;
+  transition: 1s opacity;
+  //transform: scale(0%);
+  will-change: transform;
+  opacity: 0;
+  z-index: 1;
+}
+
+.button2ItemAndroidAndIOS_add {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px 12px;
+  margin-top: auto;
+  transition: 1s opacity;
+  //transform: scale(100%);
+  will-change: transform;
+  opacity: 1;
+  z-index: 2;
+}
+
+.button2ItemAndroidAndIOS_remove {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 48px 12px;
+  transition: 1s opacity;
+  //transform: scale(0%);
+  will-change: transform;
+  opacity: 0;
+  z-index: 1;
+}
+
+.buttonGroupContainerAndroidAndIOS {
+  max-width: 100%;
+  min-width: 100%;
+  display: flex;
+  gap: 6px;
+}
+
+.contentErrorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 76px);
+}
+
+.topIllustrationContainer {
+  margin: 44px auto 0px auto;
+  max-width: 150px;
+  min-width: 150px;
+  padding: 0px 50px;
+}
